@@ -8,6 +8,8 @@ from ship import Ship
 
 import game_functions as gf
 
+
+
 def run_game():
 
     pygame.init()
@@ -26,5 +28,8 @@ def run_game():
         gf.check_events()
 
         gf.update_screen(ai_settings, screen, ship)
+
+
+
 
 run_game()
