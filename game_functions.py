@@ -6,7 +6,7 @@ import sys
 
 import pygame
 
-def check_events():
+def check_events(ship):
 
     for event in pygame.event.get():
 
@@ -14,7 +14,7 @@ def check_events():
 
             sys.exit()
         elif event.type == pygame.KEYDOWN:
-            
+
             if event.key == pygame.K_RIGHT:
 
                 ship.rect.centerx += 1
